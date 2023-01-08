@@ -1,0 +1,11 @@
+import json
+
+f = open('logs.json')
+  
+data = json.load(f)
+  
+for i in data:
+    name = "logs_" + str(i) + ".json"
+    print(name)
+  
+f.close()
